@@ -1,0 +1,7 @@
+{
+	"urls": {
+		"api": "/api",
+		"badges": "/badges",
+		"ui": "/admin"
+	}
+}
