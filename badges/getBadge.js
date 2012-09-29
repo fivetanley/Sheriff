@@ -1,6 +1,6 @@
-var db = require('sheriff-db'),
+var db = require('../lib/db'),
 	_ = require('lodash'),
-	settings = require('sheriff-settings');
+	settings = require('../lib/settings');
 
 module.exports = function getBadge(id) {
 	// Start with:

@@ -17,12 +17,17 @@ The Open Badges server with an extremely simple interface
     
 2. Fix the oopsies
 
+        cd ~
         sudo chown -R vagrant:vagrant ~/
-        cd /vagrant
-        git pull
         
 3. Run the daggon' thing!
 
+        cd ~
+        git clone git://github.com/BYUWeekendOfCode/Sheriff.git
+        cd Sheriff
         npm install
         node server
+        
+4. Open the demo site in Chrome
 
+        http://localhost:3000/admin/
