@@ -3,7 +3,7 @@
 
 Vagrant::Config.run do |config|
   config.vm.box = "precise64"
-  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
+  config.vm.box_url = "http://students.cs.byu.edu/~tdixon2/sheriff.box"
 
   # Assign this VM to a host-only network IP, allowing you to access it
   # via the IP. Host-only networks can talk to the host machine as well as
