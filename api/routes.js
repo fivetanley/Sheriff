@@ -2,6 +2,8 @@ var db = require('../lib/db');
 
 function requireAuthentication(req, res, next) {
 	// Check session to see if logged in. If so, next(); if not, respond with a 401 status code.
+	res.json({ error: { message: 'None shall pass!'} });
+	//next();
 }
 
 module.exports = function(app) {
@@ -19,6 +21,8 @@ module.exports = function(app) {
 	// Available badges operations
 
 	app.get('/badges_available', requireAuthentication, function(req, res) {
+		var badges = db.get('badges') || [];
+		res.json(badges);
 		// All available badges
 	});
 
