@@ -23,6 +23,10 @@ The Open Badges server with an extremely simple interface
         
 3. Run the daggon' thing!
 
+        cd /vagrant
         npm install
         node server
+        
+4. Open the demo site in Chrome
 
+        http://localhost:3000/admin/
