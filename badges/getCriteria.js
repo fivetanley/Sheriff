@@ -1,4 +1,4 @@
-var db = require('sheriff-db');
+var db = require('../lib/db');
 
 module.exports = function getCriteria(id) {
 	// Return badges_available.criteria where badges_issued.id = id AND badges_available.rowid = badges_issued.badge_id
